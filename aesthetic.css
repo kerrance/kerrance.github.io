@@ -72,19 +72,19 @@ a:focus {
   text-decoration: none;
 }
 
-nav ul {
+.breadcrumbs ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 2.4rem;
+  margin: 0 0 1rem;
   font-size: 0.8rem;
 }
 
-nav ul li {
+.breadcrumbs ul li {
   display: inline;
   margin-right: 0.3rem;
 }
 
-nav ul li a:link {
+.breadcrumbs ul li a:link {
   background-color: #ebebeb;
   color: grey;
   padding: 0.2rem 0.6rem;
@@ -92,43 +92,43 @@ nav ul li a:link {
   text-decoration: none;
 }
 
-nav ul li a:visited {
+.breadcrumbs ul li a:visited {
   color: grey;
 }
 
 @media (prefers-color-scheme: dark) {
-  nav ul li a:link {
+  .breadcrumbs ul li a:link {
     background-color: #1f1f1f;
     color: grey;
   }
-  nav ul li a:visited {
+  .breadcrumbs ul li a:visited {
     color: grey;
   }
 }
 
-nav ul li:last-child {
+.breadcrumbs ul li:last-child {
   margin-right: 0;
 }
 
-nav ul li:last-child a:link {
+.breadcrumbs ul li:last-child a:link {
   background-color: var(--color__yellow);
   color: var(--color__black);
 }
 
-nav ul li:last-child a:visited {
+.breadcrumbs ul li:last-child a:visited {
   color: var(--color__black);
 }
 
-nav ul li a:active,
-nav ul li a:hover,
-nav ul li:last-child a:active,
-nav ul li:last-child a:hover {
+.breadcrumbs ul li a:active,
+.breadcrumbs ul li a:hover,
+.breadcrumbs ul li:last-child a:active,
+.breadcrumbs ul li:last-child a:hover {
   background-color: var(--color__mid-green);
   color: white;
 }
 
-nav ul li a:focus,
-nav ul li:last-child a:focus {
+.breadcrumbs ul li a:focus,
+.breadcrumbs ul li:last-child a:focus {
   background-color: var(--color__mid-green);
   outline: var(--color__yellow) auto 1px;
   outline-offset: 0.2rem;
