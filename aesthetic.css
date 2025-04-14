@@ -191,9 +191,3 @@ iframe {
   width: 100% !important;
   margin-bottom: 0.4rem;
 }
-
-blockquote {
-  border-left: 0.3rem solid var(--color__mid-green);
-  padding: 0.6rem 0.6rem 0.6rem 1.2rem;
-  font-style: italic;
-}
