@@ -183,6 +183,13 @@ time {
   text-decoration: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  time {
+    background-color: #1f1f1f;
+    color: grey;
+  }
+}
+
 time.new {
   background-color: var(--color__yellow);
   color: var(--color__black);
