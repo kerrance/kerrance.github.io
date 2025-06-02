@@ -83,6 +83,12 @@ a[rel~="external"]:after {
   margin-left: 0.2rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  a[rel~="external"]:after {
+    filter: invert(100%);
+  }
+}
+
 .breadcrumbs ul {
   list-style: none;
   padding: 0;
