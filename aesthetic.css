@@ -1,6 +1,5 @@
 :root {
   --color__green: #007f6e;
-  --color__mid-green: #006a5d;
   --color__yellow: #f2c311;
   --color__black: #121110;
 }
@@ -130,13 +129,13 @@ a:focus {
 .breadcrumbs ul li a:hover,
 .breadcrumbs ul li:last-child a:active,
 .breadcrumbs ul li:last-child a:hover {
-  background-color: var(--color__mid-green);
+  background-color: var(--color__green);
   color: white;
 }
 
 .breadcrumbs ul li a:focus,
 .breadcrumbs ul li:last-child a:focus {
-  background-color: var(--color__mid-green);
+  background-color: var(--color__green);
   outline: var(--color__yellow) auto 2px;
   outline-style: solid;
   outline-offset: 0.2rem;
