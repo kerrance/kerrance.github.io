@@ -17,15 +17,22 @@
         justify-content: space-between;
       }
 
-      .dates {
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-
       @media only screen and (max-width: 1220px) {
         .headline {
           flex-direction: column;
         }
+      }
+
+      .position {
+        display: inline-flex;
+        flex-shrink: 1;
+      }
+
+      .dates {
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: inline-flex;
+        flex-shrink: 0;
       }
 
       @media print {
@@ -59,9 +66,17 @@
           text-underline-offset: initial;
         }
 
+        h1 {
+          font-size: 1.8em;
+        }
+
         h2,
         .dates {
           font-size: 1.2em;
+        }
+
+        ul {
+          padding-left: 15px;
         }
 
         li {

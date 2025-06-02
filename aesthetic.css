@@ -12,17 +12,19 @@
 }
 
 body {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-family: Arial, sans-serif;
   color: var(--color__black);
   line-height: 1.4;
-  padding: 6vh 9vw;
-  max-width: 64rem;
+  margin: 0 auto;
+  padding: 3rem;
+  max-width: 48rem;
 }
 
 @media only screen and (max-width: 490px) {
   body {
-    padding: 6vw;
+    margin: 0;
+    padding: 2rem;
     max-width: none;
   }
 }
@@ -50,25 +52,30 @@ p {
   }
 }
 
-a:link {
-  color: var(--color__green);
-  text-decoration: underline var(--color__green) 0.1rem;
-  text-underline-offset: 0.1rem;
-}
-
-a:visited {
-  color: var(--color__green);
-}
-
+a:link,
 a:active,
-a:hover {
-  color: var(--color__mid-green);
-  text-decoration: underline var(--color__mid-green) 0.1rem;
+a:hover,
+a:visited {
+  color: var(--color__black);
+  text-decoration: underline var(--color__black) 0.1rem;
+  text-underline-offset: 0.2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  a:link,
+  a:active,
+  a:hover,
+  a:visited {
+    color: white;
+    text-decoration: underline white 0.1rem;
+    text-underline-offset: 0.2rem;
+  }
 }
 
 a:focus {
-  outline: var(--color__green) auto 1px;
-  outline-offset: 0.2rem;
+  outline: var(--color__yellow) auto 2px;
+  outline-style: solid;
+  outline-offset: 0.1rem;
   text-decoration: none;
 }
 
@@ -130,33 +137,19 @@ a:focus {
 .breadcrumbs ul li a:focus,
 .breadcrumbs ul li:last-child a:focus {
   background-color: var(--color__mid-green);
-  outline: var(--color__yellow) auto 1px;
+  outline: var(--color__yellow) auto 2px;
+  outline-style: solid;
   outline-offset: 0.2rem;
   color: white;
 }
 
-.meta {
-  display: inline-block;
-  font-size: 0.8rem;
-  padding: 0.1rem 0.6rem;
-  background-color: var(--color__green);
-  color: white;
-  border-radius: 0.3rem;
-  font-weight: bold;
-}
-
-.meta time {
-  font-weight: normal;
-}
-
-h1,
-h2 {
-  text-decoration: underline var(--color__yellow) 0.2rem;
-  text-underline-offset: 0.2rem;
-}
-
 h1 {
-  font-size: 3rem;
+  display: inline;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
 }
 
 .avatar {
@@ -186,8 +179,6 @@ li {
   }
 }
 
-iframe {
-  aspect-ratio: 16 / 9;
-  width: 100% !important;
-  margin-bottom: 0.4rem;
+footer p:last-of-type {
+  margin-bottom: 0;
 }
