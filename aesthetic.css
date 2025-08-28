@@ -89,49 +89,19 @@ a[rel~="external"]:after {
   }
 }
 
-.navigation {
-  margin-bottom: 4rem;
-}
-
-@media only screen and (max-width: 490px) {
-  .navigation {
-    margin-bottom: 2rem;
-  }
-}
-
-.navigation ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 2rem;
-}
-
-@media only screen and (max-width: 490px) {
-  .navigation ul {
-    gap: 1rem;
-  }
-}
-
-.navigation li {
-  margin-bottom: 0;
-}
-
-.breadcrumbs ul {
+nav ul {
   list-style: none;
   padding: 0;
   margin: 0 0 1rem;
   font-size: 0.8rem;
 }
 
-.breadcrumbs ul li {
+nav ul li {
   display: inline;
   margin-right: 0.3rem;
 }
 
-.breadcrumbs ul li a:link {
+nav ul li a:link {
   background-color: #ebebeb;
   color: grey;
   padding: 0.2rem 0.6rem;
@@ -139,43 +109,43 @@ a[rel~="external"]:after {
   text-decoration: none;
 }
 
-.breadcrumbs ul li a:visited {
+nav ul li a:visited {
   color: grey;
 }
 
 @media (prefers-color-scheme: dark) {
-  .breadcrumbs ul li a:link {
+  nav ul li a:link {
     background-color: #1f1f1f;
     color: grey;
   }
-  .breadcrumbs ul li a:visited {
+  nav ul li a:visited {
     color: grey;
   }
 }
 
-.breadcrumbs ul li:last-child {
+nav ul li:last-child {
   margin-right: 0;
 }
 
-.breadcrumbs ul li:last-child a:link {
+nav ul li:last-child a:link {
   background-color: var(--color__yellow);
   color: var(--color__black);
 }
 
-.breadcrumbs ul li:last-child a:visited {
+nav ul li:last-child a:visited {
   color: var(--color__black);
 }
 
-.breadcrumbs ul li a:active,
-.breadcrumbs ul li a:hover,
-.breadcrumbs ul li:last-child a:active,
-.breadcrumbs ul li:last-child a:hover {
+nav ul li a:active,
+nav ul li a:hover,
+nav ul li:last-child a:active,
+nav ul li:last-child a:hover {
   background-color: var(--color__green);
   color: white;
 }
 
-.breadcrumbs ul li a:focus,
-.breadcrumbs ul li:last-child a:focus {
+nav ul li a:focus,
+nav ul li:last-child a:focus {
   background-color: var(--color__green);
   outline: var(--color__yellow) auto 2px;
   outline-style: solid;
