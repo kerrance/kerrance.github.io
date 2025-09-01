@@ -8,6 +8,6 @@ You can find out more about me and my work on [my personal website](https://www.
 
 I am the founder of [Razor Sharp](https://razorsharp.digital/), where I offer Digital Handyman services, including website & app development, AI & automations and technical support.
 
-I also have a [digital playground](https://kerrance.github.io/kerrance/), an evolving space for experiments, writing and thoughts etc.
+I also have a [digital playground](https://kerrance.github.io/), an evolving space for experiments, writing and thoughts etc.
 
 Perhaps I can help you? Please email [hello@kerrisharp.com](mailto:hello@kerrisharp.com).
