@@ -229,9 +229,3 @@ time.new {
 .meta time {
   font-weight: normal;
 }
-
-iframe {
-  aspect-ratio: 16 / 9;
-  width: 100% !important;
-  margin-bottom: 0.4rem;
-}
