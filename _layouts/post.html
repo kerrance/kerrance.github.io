@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<article>
+  <header class="meta">
+    {% if page.published_date %} Published
+    <time datetime="{{ page.published_date }}">{{ page.published_date }}</time> {% endif %} {% if page.modified_date %}
+    Updated <time datetime="{{ page.modified_date }}">{{ page.modified_date }}</time>
+    {% endif %}
+  </header>
+
+  {{ content }}
+</article>

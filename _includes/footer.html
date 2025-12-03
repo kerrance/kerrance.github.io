@@ -1,0 +1,26 @@
+{% if page.footer_type == 'cv' %}
+<footer>
+  <p><a href="#">Scroll back to the top</a></p>
+  <p>
+    If you are interested in finding out more about my work, you can
+    <a href="//linkedin.com/in/kerri-sharp/" target="_blank" rel="external">connect with me on LinkedIn</a>.
+  </p>
+</footer>
+{% elsif page.footer_type == 'home' %}
+<footer>
+  <p>
+    If you are interested in finding out more about my work, you can <a href="/cv">read my CV</a> or
+    <a href="//linkedin.com/in/kerri-sharp/" target="_blank" rel="external">connect with me on LinkedIn</a>.
+  </p>
+
+  <p>Perhaps I can help you? Please email <a href="mailto:hello@kerrisharp.com">hello@kerrisharp.com</a>.</p>
+</footer>
+{% elsif page.footer_type == 'error' %}
+<footer>
+  <a href="/">Return home.</a>
+</footer>
+{% else %}
+<footer class="screen-only">
+  <p><a href="#">Scroll back to the top</a></p>
+</footer>
+{% endif %}
