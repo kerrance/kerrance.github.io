@@ -197,3 +197,41 @@ li {
 footer p:last-of-type {
   margin-bottom: 0;
 }
+
+time {
+  font-size: 0.8rem;
+  background-color: #ebebeb;
+  color: grey;
+  margin: 0 0.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  time {
+    background-color: #1f1f1f;
+    color: grey;
+  }
+}
+
+time.new {
+  background-color: var(--color__yellow);
+  color: var(--color__black);
+}
+
+.meta {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.meta time {
+  font-weight: normal;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+  width: 100% !important;
+  margin-bottom: 0.4rem;
+}
