@@ -1,6 +1,26 @@
 # Kerri Sharp
 
-The website represents my work and career in a formal context.
+The website represents my work and career in a formal context. Built with Jekyll and hosted on GitHub Pages.
+
+## Development
+
+### Setup
+
+Requires Ruby 3.0+. Install dependencies:
+
+```bash
+bundle install
+```
+
+### Local Development
+
+Start the development server with live reload:
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
+The site will be available at `http://localhost:4000`.
 
 ## Contact
 

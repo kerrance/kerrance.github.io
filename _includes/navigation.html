@@ -1,0 +1,8 @@
+<nav class="screen-only">
+  <ul>
+    <li><a href="/">Home</a></li>
+    {% if page.nav_title %}
+    <li><a href="{{ page.url | replace: 'index.html', '' }}">{{ page.nav_title }}</a></li>
+    {% endif %}
+  </ul>
+</nav>

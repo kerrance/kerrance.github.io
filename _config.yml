@@ -1,0 +1,37 @@
+# Jekyll Configuration
+title: Kerri Sharp
+author: Kerri Sharp
+email: hello@kerrisharp.com
+description: British software engineer and web developer offering digital solutions, website development, and AI automation services
+url: https://www.kerrisharp.com
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site metadata for SEO
+twitter_username: ""
+github_username: ""
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
