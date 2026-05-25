@@ -4,7 +4,10 @@
     <title>Kerri Sharp - Software Engineer &amp; Web Developer</title>
     <meta charset="UTF-8" />
     <meta name="author" content="Kerri Sharp" />
-    <meta name="description" content="This is my homepage where you can find out more about me" />
+    <meta
+      name="description"
+      content="British software engineer and web developer offering digital solutions, website development, and AI automation services"
+    />
     <meta
       name="keywords"
       content="Kerri Sharp, software engineer, web developer, freelance developer, Somerset, bespoke websites, frontend developer, backend developer, full stack developer, automation, AI solutions, creative coding, UK developer"
@@ -27,8 +30,138 @@
     />
     <meta name="twitter:image" content="https://www.kerrisharp.com/meta.jpg" />
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="aesthetic.css" rel="stylesheet" />
-    <link href="paper.css" rel="stylesheet" />
+    <style>
+      :root {
+        --color__green: #007f6e;
+        --color__yellow: #f2c311;
+        --color__black: #121110;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        * {
+          scroll-behavior: smooth;
+        }
+      }
+
+      body {
+        -webkit-font-smoothing: antialiased;
+        font-size: 1.2rem;
+        font-family: Arial, sans-serif;
+        color: var(--color__black);
+        line-height: 1.4;
+        margin: 0;
+        padding: 4rem 2rem;
+        max-width: none;
+      }
+
+      @media only screen and (min-width: 512px) {
+        body {
+          padding: 6vh 12vw;
+          max-width: 48rem;
+        }
+      }
+
+      @media only screen and (min-width: 1024px) {
+        body {
+          padding: 10vh 24vw;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: var(--color__black);
+          color: white;
+        }
+      }
+
+      header,
+      p {
+        margin-bottom: 1rem;
+      }
+
+      ::selection {
+        background-color: var(--color__yellow);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        ::selection {
+          color: var(--color__black);
+        }
+      }
+
+      a:link,
+      a:active,
+      a:hover,
+      a:visited {
+        color: var(--color__black);
+        text-decoration: underline var(--color__black) 0.1rem;
+        text-underline-offset: 0.2rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        a:link,
+        a:active,
+        a:hover,
+        a:visited {
+          color: white;
+          text-decoration: underline white 0.1rem;
+          text-underline-offset: 0.2rem;
+        }
+      }
+
+      a:focus {
+        outline: var(--color__yellow) auto 2px;
+        outline-style: solid;
+        outline-offset: 0.1rem;
+        text-decoration: none;
+      }
+
+      a[rel~="external"]:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewbox='0 0 12.2 12.2' width='14' height='14'%3E%3Cpath d='M5.7 0v1.5h4L4.5 6.7l1 1.1 5.3-5.2v3.9h1.4V0z'/%3E%3Cpath fill='none' d='M3.4 6.7l3-2.9H1.5v7h7V5.9l-3 2.9z'/%3E%3Cpath d='M8.5 5.9v4.9h-7v-7h4.9l1.5-1.6H0v10h10V4.4z'/%3E%3C/svg%3E");
+        margin-left: 0.2rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        a[rel~="external"]:after {
+          filter: invert(100%);
+        }
+      }
+
+      h1 {
+        display: inline;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .name {
+        text-decoration: underline var(--color__yellow) 0.1rem;
+        text-underline-offset: 0.2rem;
+      }
+
+      .avatar {
+        margin-left: 1rem;
+        border-radius: 100%;
+        float: right;
+      }
+
+      @media only screen and (max-width: 490px) {
+        .avatar {
+          margin-left: 0;
+          float: none;
+        }
+      }
+
+      footer p:last-of-type {
+        margin-bottom: 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -39,6 +172,7 @@
       class="avatar"
       width="166"
       height="166"
+      fetchpriority="high"
     />
 
     <header>
@@ -53,7 +187,8 @@
       <p>I currently live in Somerset, England with my wife and our daughter.</p>
 
       <p>
-        I am the founder of <a href="//razorsharp.digital" target="_blank" rel="external">Razor Sharp</a>. I offer
+        I am the founder of
+        <a href="//razorsharp.digital" target="_blank" rel="external noopener noreferrer">Razor Sharp</a>. I offer
         Digital Handyman services, including website &amp; app development, AI &amp; automations and technical support
         for businesses and entrepreneurs.
       </p>
@@ -70,18 +205,24 @@
 
       <p>
         My claim to fame is that I am mentioned in the song
-        <a href="//youtube.com/watch?v=e9kff6P7mKU" target="_blank" rel="external">Fans (Are So Cool)</a> by Kero Kero
-        Bonito.
+        <a href="//youtube.com/watch?v=e9kff6P7mKU" target="_blank" rel="external noopener noreferrer"
+          >Fans (Are So Cool)</a
+        >
+        by Kero Kero Bonito.
       </p>
     </main>
 
     <footer>
       <p>
         If you are interested in finding out more about my work, you can
-        <a href="//linkedin.com/in/kerri-sharp/" target="_blank" rel="external">connect with me on LinkedIn</a>.
+        <a href="//linkedin.com/in/kerri-sharp/" target="_blank" rel="external noopener noreferrer"
+          >connect with me on LinkedIn</a
+        >.
       </p>
 
-      <p>Perhaps I can help you? Please email <a href="mailto:hello@kerrisharp.com">hello@kerrisharp.com</a>.</p>
+      <p>
+        Perhaps I can help you? Please email <a href="mailto:hello@razorsharp.digital">hello@razorsharp.digital</a>.
+      </p>
     </footer>
   </body>
 </html>
